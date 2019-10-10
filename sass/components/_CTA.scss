@@ -1,0 +1,39 @@
+.cta {
+    display: block;
+    background-color: $color-primary;
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.primaryColor{
+    color: $color-primary;
+}
+
+.disabledBtn{
+    background-color: rgb(187, 187, 187);
+}
+
+.continueBtn{
+    width: 80%;
+    padding: 0.9rem 1.5rem;
+    margin: 1.5rem auto 3.5rem auto;
+    font-size: 1.8rem;
+    background-color: $color-primary;
+}
+
+.displayNone{
+    display: none;
+}
+
+.w{
+    color: white;
+}
+
+

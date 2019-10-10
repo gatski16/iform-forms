@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.typekit.net/axy8van.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="robots" content="noindex" />
+    <script src="https://kea-alt-del.dk/iform/login.js"></script>
+
+    <title>IFORM</title>
+</head>
+
+<body>
+    <div class="body__hidden">
+        <section class="navbar">
+            <img src="img/back-arrow.png" class="navbar__back-arrow" alt="Back">
+            <img src="img/logo.png" class="navbar__logo" alt="IFORM">
+        </section>
+        <section class="carousel">
+            <div class="carousel__imgs siema">
+                <div><img src="img/fiberjacket/carousel-1.png" alt="Iform" /></div>
+                <div><img src="img/fiberjacket/carousel-1.png" alt="Iform" /></div>
+
+            </div>
+            <button class="carousel__prev">prev</button>
+            <button class="carousel__next">next</button>
+
+        </section>
+        <section class="product-info">
+            <div class="product-info__wrapper">
+                <h1 class="product-info__wrapper--heading">4 Issues of iForm</h1>
+                <h1 class="product-info__wrapper--price">149dkk</h1>
+                <p class="product-info__wrapper--gift">+Active fiber jacket</p>
+                <p class="product-info__wrapper--savings"><strike>900dkk</strike></p>
+                <div class="product-info__wrapper--rating">
+                    <img src="img/star-rating.png" alt="Rating">
+                    <p>4.2 out of 5 (1901)</p>
+                </div>
+            </div>
+            <div class="product-info__button">
+                <button class="cta orderBtn">Order now</button>
+                <p>+49 dkk delivery fee</p>
+            </div>
+            <div class="product-info__text">
+                <p>The magazine hits your mailbox every three weeks - postage-free</p>
+                <p>Nice & lightweight fiber jacket from ActiveFit</p>
+                <p>Get big discounts on workout gear and equipment at the “Moreshop” benefit club</p>
+                <p>Digital version of the latest 12 issues of I FORM via the WYPE app</p>
+                <p>You can cancel your subscription at any time. After the offer, you continue in the current
+                    subscription
+                    to DKK 77.50 per. number incl. delivery.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="modal-order">
+        <div class="modal-order__top">
+            <div class="modal-order__top--back"><img src="img/back-arrow.png" alt="back"></div>
+            <h2 class="modal-order__top--heading">1. Choose size</h2>
+            <div class="modal-order__top--close"><a href="#" class="close"></a></div>
+        </div>
+
+        <div class="modal-order__changing">
+            <div class="modal-order__sizing">
+                <div class="modal-order__product--heading">
+                    <h2>ActiveFit fiber jacket</h2>
+                </div>
+                <div class="modal-order__product--image"><img src="img/jacket.png" alt="jacket"></div>
+                <div class="modal-order__product--sizes">
+                    <input type="radio" id="s" name="size">
+                    <label class="modal-order__product--sizes--size" for="s">S</label>
+                    <input type="radio" id="m" name="size">
+                    <label class="modal-order__product--sizes--size" for="m">M</label>
+                    <input type="radio" id="l" name="size">
+                    <label class="modal-order__product--sizes--size" for="l">L</label>
+                    <input type="radio" id="xl" name="size">
+                    <label class="modal-order__product--sizes--size" for="xl">XL</label>
+                </div>
+                <div class="modal-order__product--addition"><a href="">Show sizing table</a></div>
+                <div class="modal-order__product--button"><button class="cta">Continue</button></div>
+            </div>
+
+            <div class="modal-order__numbers">
+                <div class="modal-order__product--heading">
+                    <h2>Choose more issues <br>
+                        and save more!</h2>
+                </div>
+                <div class="modal-order__product--bundles">
+                    <input type="radio" id="4" name="numbers" checked>
+                    <label class="modal-order__product--bundles--bundle" for="4">
+                        <h3>4 no for 149 kr.</h3>
+                        <p>Save 761kr</p>
+                    </label>
+                    <input type="radio" id="6" name="numbers">
+                    <label class="modal-order__product--bundles--bundle" for="6">
+                        <h3>6 no for 199 kr.</h3>
+                        <p>Save 866kr</p>
+                    </label>
+                    <input type="radio" id="8" name="numbers">
+                    <label class="modal-order__product--bundles--bundle" for="8">
+                        <h3>8 no for 299 kr.</h3>
+                        <p>Save 921kr</p>
+                    </label>
+                    <p class="modal-order__product--bundles--fee">+ DKK 49.50 in postage and exp.</p>
+                </div>
+                <div class="modal-order__product--addition"><a href="">See your savings</a></div>
+                <div class="modal-order__product--button"><a href="checkout.html" class="cta">Check out</a></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="js/siema.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/heightCheck.js"></script>
+<script>
+    const mySiema = new Siema();
+    document.querySelector('.carousel__prev').addEventListener('click', () => mySiema.prev());
+    document.querySelector('.carousel__next').addEventListener('click', () => mySiema.next());
+</script>

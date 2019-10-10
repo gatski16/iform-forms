@@ -1,0 +1,40 @@
+.thankYou{
+    background-color: $color-primary;
+    padding: 0 10%;
+    text-align: center;
+    color: white;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+
+    h1{
+        height: 30%;
+        line-height: 30vh;
+        font-size: 4rem;
+    }
+
+    img{
+        height: 30%;
+        padding: 5vh;
+        margin: auto;
+    }
+
+    h2{
+        height: 7%;
+        line-height: 7vh;
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin: auto;
+    }
+
+    p{
+        padding: 0 10%;
+        height: 15%;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    button{
+        background-color: white;
+        color: $color-primary;
+    }
+}
